@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1080">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Height="30" Width="60"  Click="Wololo" Margin="20,-20,83,533" Grid.ColumnSpan="2" >Clickame</Button>
+        <Border BorderBrush="{x:Null}" Grid.Row="0" Grid.Column="1" Width="200" Height="30">
+            <TextBlock TextWrapping="Wrap" Text="Hermanos" VerticalAlignment="Center" Margin="90,-270,-90,284"/>
+        </Border>
+        <ComboBox Name="ListaHermanos" Grid.Column="1" Width="100" HorizontalAlignment="Left" Visibility="Visible" SelectionChanged="CargarInfoHermano" Margin="81,62,0,456" Grid.ColumnSpan="2"/>
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="17,20,-17,-20" Grid.RowSpan="3">
+            <TextBlock Name="NombreHermano" Margin="10">Nombre:</TextBlock>
+            <TextBlock Name="ApellidoHermano" Margin="10">Apellido:</TextBlock>
+            <TextBlock Name="EdadHermano" Margin="10">Edad:</TextBlock>
+            <TextBlock Name="LocalidadHermano" Margin="10">Localidad:</TextBlock>
+            <TextBlock Name="DireccionHermano" Margin="10">Direccion:</TextBlock>
+            <TextBlock Name="TelefonoHermano" Margin="10">Teléfono:</TextBlock>
+            <TextBlock Name="EmailHermano" Margin="10">Email:</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
